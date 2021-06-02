@@ -13,13 +13,13 @@ public class App
         String fileName = args[1];
         int index = fileName.indexOf("*");
         if(index > 0){
-            LocDir(fileName,index,typeOfCount);
+            locDir(fileName,index,typeOfCount);
         } else {
-            System.out.println(LocFile(fileName,typeOfCount));
+            System.out.println(locFile(fileName,typeOfCount));
         }
     }
 
-    public static void LocDir(String fileName,int index,String typeOfCount) throws IOException {
+    public static void locDir(String fileName,int index,String typeOfCount) throws IOException {
         String path = fileName.substring(0,index);
         String glob = fileName.substring(index+2);
         Path dir = FileSystems.getDefault().getPath(path);
@@ -37,7 +37,7 @@ public class App
         stream.close();
     }
 
-    public static long LocFile(String fileName,String typeOfCount){
+    public static long locFile(String fileName,String typeOfCount){
         long numLines;
         if(typeOfCount.equals("phy")){
             PhyCount phyCount = new PhyCount();
