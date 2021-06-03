@@ -9,5 +9,8 @@
         <module name="LocCount" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="LocCount" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

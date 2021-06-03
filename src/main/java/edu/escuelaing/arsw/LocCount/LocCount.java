@@ -10,24 +10,7 @@ import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-/*
-hola
-hola
-hola
-hola
- */
-
-//hola
-
-/**
- * hola
- * hola
- * hola
- * hola
- */
-
 public class LocCount {
-
     public long numberOfLines(String fileName) {
         Pattern pat = Pattern.compile("^/");
         Pattern pat2 = Pattern.compile("^//");

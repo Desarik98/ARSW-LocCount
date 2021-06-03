@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"edu.escuelaing.arsw"},{"l":"edu.escuelaing.arsw.LocCount"}]

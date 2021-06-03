@@ -16,7 +16,7 @@ public class AppTest
     public void deberiaContarLineasPhyCountFile(){
         PhyCount phyCount = new PhyCount();
         long numLines = phyCount.numberOfLines(path1);
-        Assert.assertEquals(63,numLines);
+        Assert.assertEquals(46,numLines);
         numLines = phyCount.numberOfLines(path2);
         Assert.assertEquals(20,numLines);
     }
